@@ -5,42 +5,32 @@
 
 <nav aria-label="Main" id="site-nav" class="site-nav">
   <ul class="nav-list">
-    <li class="nav-list-item">
-      <a href="{{ '/' | relative_url }}" class="nav-list-link">Home</a>
-    </li>
-    <li class="nav-list-item">
-      <a href="{{ '/docs/services/' | relative_url }}" class="nav-list-link">Services</a>
-    </li>
-    <li class="nav-list-item active">
-      <button class="nav-list-expander btn-reset" aria-label="Blog submenu" aria-expanded="true">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button>
-      <a href="{{ '/docs/blog/' | relative_url }}" class="nav-list-link">Blog</a>
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a href="{{ '/docs/blog/custom-fields-ifs-cloud/' | relative_url }}" class="nav-list-link">Custom Fields in IFS Cloud</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="{{ '/docs/blog/ifs-cloud-migration-job/' | relative_url }}" class="nav-list-link">IFS Cloud Migration Job</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="{{ '/docs/blog/custom-events/' | relative_url }}" class="nav-list-link">Custom Events</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="{{ '/docs/blog/ifs-workflow-timing/' | relative_url }}" class="nav-list-link">IFS Workflow Timing</a>
-        </li>
+  <li class="nav-list-item {% if page.url contains '/docs/blog/' %}active{% endif %}">
+    <button class="nav-list-expander btn-reset" aria-label="Blog submenu" 
+      aria-expanded="{% if page.url contains '/docs/blog/' %}true{% else %}false{% endif %}">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button>
+    <a href="{{ '/docs/blog/' | relative_url }}" class="nav-list-link">Blog</a>
+    
+    <ul class="nav-list">
+      <li class="nav-list-item {% if page.url == '/docs/blog/custom-fields-ifs-cloud/' %}active{% endif %}">
+        <a href="{{ '/docs/blog/custom-fields-ifs-cloud/' | relative_url }}" class="nav-list-link">Custom Fields in IFS Cloud</a>
+      </li>
       </ul>
-    </li>
-    <li class="nav-list-item active">
-      <button class="nav-list-expander btn-reset" aria-label="Topic submenu" aria-expanded="true">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button>
-      <a href="{{ '/docs/topic/' | relative_url }}" class="nav-list-link">Topic</a>
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a href="{{ '/docs/topic/ifs-cloud-page-desinger/' | relative_url }}" class="nav-list-link">Page desinger</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
+  </li>
+
+  <li class="nav-list-item {% if page.url contains '/docs/topic/' %}active{% endif %}">
+    <button class="nav-list-expander btn-reset" aria-label="Topic submenu" 
+      aria-expanded="{% if page.url contains '/docs/topic/' %}true{% else %}false{% endif %}">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button>
+    <a href="{{ '/docs/topic/' | relative_url }}" class="nav-list-link">Topic</a>
+    
+    <ul class="nav-list">
+      <li class="nav-list-item {% if page.url == '/docs/topic/ifs-cloud-page-desinger/' %}active{% endif %}">
+        <a href="{{ '/docs/topic/ifs-cloud-page-desinger/' | relative_url }}" class="nav-list-link">Page designer</a>
+      </li>
+    </ul>
+  </li>
+</ul>
 </nav>
