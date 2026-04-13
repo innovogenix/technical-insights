@@ -1,6 +1,6 @@
 {%- comment -%}
   Custom site navigation for Technical Insights.
-  This override replaces the template navigation with a small, manual list.
+  This override replaces the template navigation with a clean, organized structure.
 {%- endcomment -%}
 
 <nav aria-label="Main" id="site-nav" class="site-nav">
@@ -9,7 +9,18 @@
       <a href="{{ '/' | relative_url }}" class="nav-list-link">Home</a>
     </li>
     <li class="nav-list-item">
-      <a href="{{ '/docs/custom-fields-ifs-cloud/' | relative_url }}" class="nav-list-link">Custom Fields in IFS Clouds</a>
+      <button class="nav-list-expander btn-reset" aria-label="Blog submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button>
+      <a href="{{ '/docs/blog/' | relative_url }}" class="nav-list-link">Blog</a>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a href="{{ '/docs/blog/custom-fields-ifs-cloud/' | relative_url }}" class="nav-list-link">Custom Fields in IFS Clouds</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="{{ '/docs/blog/ifs-cloud-migration-job/' | relative_url }}" class="nav-list-link">IFS Cloud Migration Job</a>
+        </li>
+      </ul>
     </li>
   </ul>
 </nav>
