@@ -11,4 +11,4 @@ permalink: /
 Welcome to our engineering blog. We write about software architecture, 
 cloud, APIs, and everything in between.
 
-[Browse Posts]({% link docs/custom-fields-ifs-cloud.md %})
+[Browse Posts](#)
