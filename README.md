@@ -1,52 +1,43 @@
-<p align="right">
-    <a href="https://badge.fury.io/rb/just-the-docs"><img src="https://badge.fury.io/rb/just-the-docs.svg" alt="Gem version"></a> <a href="https://github.com/just-the-docs/just-the-docs/actions/workflows/ci.yml"><img src="https://github.com/just-the-docs/just-the-docs/actions/workflows/ci.yml/badge.svg" alt="CI Build status"></a> <a href="https://app.netlify.com/sites/just-the-docs/deploys"><img src="https://api.netlify.com/api/v1/badges/9dc0386d-c2a4-4077-ad83-f02c33a6c0ca/deploy-status" alt="Netlify Status"></a>
-</p>
-<br><br>
-<p align="center">
-    <h1 align="center">Just the Docs</h1>
-    <p align="center">A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search.<br>Easily hosted on GitHub Pages with few dependencies.</p>
-    <p align="center"><strong><a href="https://just-the-docs.com/">See it in action!</a></strong></p>
-    <br><br><br>
-</p>
+# Technical Insights
 
-<p align="center">A video walkthrough of various Just the Docs features</p>
+Welcome to **Technical Insights** – a knowledge hub dedicated to exploring the intricacies of IFS Cloud ERP, modern software architecture, and essential technical concepts for enterprise development.
 
-https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-bb9b-437fe47df071.mp4
+## What We Cover
 
-## Installation
+This blog provides in-depth articles and guides on:
 
-### Use the template
+- **IFS Cloud & ERP Systems**: Deep dives into IFS Cloud configuration, customization, and best practices for enterprise resource planning
+- **Software Architecture**: Patterns, principles, and practical approaches to designing scalable and maintainable systems
+- **Cloud & APIs**: Building robust cloud-native applications and designing effective REST APIs
+- **Engineering Excellence**: Tools, techniques, and methodologies for building high-quality software
 
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
+## About This Project
 
-Note: To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
+This site is built with Jekyll and the Just the Docs theme, making it easy to explore technical content with built-in search and a clean, intuitive navigation structure. All articles are written in Markdown for simplicity and version control.
 
-You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
+## Getting Started
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
+To build and preview the site locally:
 
-More specifically, the created site:
-
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
-
-Other than that, you're free to customize sites that you create with the template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
-
-### Use as a Ruby Gem
-
-Alternatively, you can install the theme as a Ruby Gem, without creating a new site.
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "just-the-docs"
+```bash
+bundle install
+bundle exec jekyll serve
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+Then open `http://localhost:4000` to view the site.
 
-```yaml
-theme: just-the-docs
-```
+## Contributing
+
+To add new articles or update existing content:
+
+1. Create a new `.md` file in the `docs/` directory
+2. Add appropriate front matter (title, navigation order, etc.)
+3. Write your content in Markdown
+4. Submit your changes via Git
+
+---
+
+Built with ❤️ for software engineers and architects exploring the technical landscape of modern enterprise systems.
 
 And then install all relevant dependencies:
 
