@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Custom Fields in IFS Cloud - Extend Your ERP Without Compromising It
+title: Custom Fields in IFS Cloud
 parent: Blog
 nav_order: 1
 ---
