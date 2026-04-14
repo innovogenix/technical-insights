@@ -33,6 +33,18 @@
       </ul>
     </li>
 
+    <li class="nav-list-item {% if page.url contains '/case-study/' %}active{% endif %}">
+      <button class="nav-list-expander btn-reset" aria-label="Case Study submenu" aria-expanded="{% if page.url contains '/case-study/' %}true{% else %}false{% endif %}">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button>
+      <a href="{{ '/docs/case-study/' | relative_url }}" class="nav-list-link">Case Study</a>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a href="{{ '/docs/case-study/strategic-data-mapping-legacy-migration/' | relative_url }}" class="nav-list-link">Strategic Data Mapping & Legacy Migration</a>
+        </li>
+      </ul>
+    </li>
+
     <li class="nav-list-item {% if page.url contains '/topic/' %}active{% endif %}">
       <button class="nav-list-expander btn-reset" aria-label="Topic submenu" aria-expanded="{% if page.url contains '/topic/' %}true{% else %}false{% endif %}">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
