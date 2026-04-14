@@ -18,6 +18,22 @@ We deliver practical, role-based training for end users, super users, and IT tea
 
 Post go-live configuration changes, workflow adjustments, reporting setup, and ongoing system optimisation — delivered by senior IFS professionals without the overhead of a large partner engagement.
 
+- Lobby Configuration
+- Aurena UI Configuration
+- Custom Fields
+- Projection Configurations
+- Custom Events
+- Migration Jobs
+- Quick Reports
+- Report Studio Reports
+- Business Reporter and All Other Reports
+- Workflow Configurations
+
+Delivered by senior IFS professionals without the overhead of a large partner engagement.
+
+
+
+
 ---
 
 Ready to talk? Email us at hello@innovogenix.com or [book a free 30-minute call →](your calendly link)
